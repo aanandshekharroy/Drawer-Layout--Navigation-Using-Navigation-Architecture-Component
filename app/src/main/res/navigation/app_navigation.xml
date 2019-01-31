@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/app_navigation"
+            app:startDestination="@id/main_screen">
+        <fragment
+                android:id="@+id/main_screen"
+                android:name="com.example.theseus.navdraw.main_view.MainFragment"
+                tools:layout="@layout/fragment_main">
+                <action android:id="@+id/open_cart"
+                app:destination="@id/cart_screen">
+
+                </action>
+        </fragment>
+        <fragment
+                android:id="@+id/cart_screen"
+                android:name="com.example.theseus.navdraw.cart_view.CartFragment"
+                tools:layout="@layout/fragment_cart">
+        </fragment>
+</navigation>
